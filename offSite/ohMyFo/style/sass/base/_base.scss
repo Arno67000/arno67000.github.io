@@ -1,0 +1,19 @@
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.main-page {
+    animation: fadein $loading-time $loading-time linear;
+    animation-fill-mode: both;
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include tablette {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

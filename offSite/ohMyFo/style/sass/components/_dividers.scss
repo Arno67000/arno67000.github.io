@@ -1,0 +1,27 @@
+.divider {                            /*Barre de séparation*/
+    z-index: 2;
+    height: 0.3rem;
+    background: linear-gradient($colour-bkgr-shadow,$colour-bkgr-dark);
+    margin-bottom: 0px;
+    margin-top: 0%;
+    border-style: none;
+    @include desktop {
+        width: 99.7%;
+    }
+    @include tablette {
+        width: 99.2%;
+    }
+    &--menu {
+        background: $colour-tertiary;
+        width: 3.5rem;
+        margin: 0 0 2rem 5%;
+        border-radius: 5px;
+        @include desktop {
+            display: none;
+        }
+        @include tablette {
+            margin: 5% 0 5% 0;
+            width: 65%;
+        }
+    }
+}

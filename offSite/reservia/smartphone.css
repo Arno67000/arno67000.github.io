@@ -1,0 +1,268 @@
+header, main, footer
+{
+	width: 94%;
+	margin: auto;
+}
+h3
+{
+	font-size: 0.9em;
+	font-family: ralewaybold, sans-serif;
+}
+p
+{
+	font-size: 0.9em;
+}
+#head_aside h2, #hebergements article h2, #activites article h2
+{
+	font-family: ralewaybold, sans-serif;
+	font-size: 1.2em;
+	padding-left: 4%;
+}
+h1
+{
+	padding-left: 1%;
+}
+/*/////////////////////////*/
+         /*EN-TETE*/
+/*/////////////////////////*/
+#en_tete
+{
+	flex-direction: column;
+	align-items: flex-end;
+	margin-bottom: 25px;
+}
+nav
+{
+	order: 3;
+	width: 100%;
+}
+nav a
+{
+	width: 50%;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	margin-top: 35px;
+	border-bottom: 3px #F2F2F2 solid;
+}
+nav a:hover
+{
+	border-top: none;
+	border-bottom-color: #0065FC; 
+}
+#register
+{
+	margin-top: 0px;
+	padding-top: 25px;
+	margin-right: 5%;
+	order: 2;
+}
+header p
+{
+	margin-bottom: 25px;
+	padding-left: 1.5%;
+}
+/*////////////////////////*/
+   /*ZONE DE RECHERCHE*/
+/*////////////////////////*/
+
+#bouton
+{
+	display: none;
+}
+#bouton_phone
+{
+	display: inline-block;
+	height: 45px;
+	position: relative;
+	left: -13px;
+	bottom: -1px;
+	margin-left: 0px;
+	background-color: #0065FC;
+	font-size: 1em;
+	color: #FFFFFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px #0065FC solid;
+	border-radius: 15px 15px 15px 15px; 
+}
+#text_area
+{
+	font-size: 0.9em;
+	padding-left: 15px;
+	width: 70%;
+	height: 47px;
+}
+.fa-map-marker-alt
+{
+	height: auto;
+}
+/*///////////////////////////////////*/
+          /*LES FILTRES*/
+/*//////////////////////////////////*/
+#filtres
+{
+	flex-wrap: wrap;
+}
+#filtres button
+{
+	margin: 5px 15px 5px 10px;
+	padding-left: 0;
+	font-family: ralewaybold, sans-serif;
+	font-size: 0.8em;
+}
+#filtres button:nth-of-type(3)
+{
+	margin-right: 40px;
+}
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+	margin-right: 3px;
+	bottom: 2px;
+}
+#filtres p
+{
+	font-family: ralewaybold, sans-serif;
+	width: 100%;
+}
+
+/*////////////////////////////////*/
+            /*INFO*/
+/*////////////////////////////////*/
+.fa-info
+{
+	position: relative;
+	bottom: 10px;
+}
+
+/*///////////////////////////////////*/
+   /*ARTICLE HEBERGEMENT+++ASIDE */
+/*///////////////////////////////////*/
+
+#hebergements
+{
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+aside
+{
+	order: 1;
+	width: 100%;
+	border-radius: 0 0 0 0;
+	margin-bottom: 15px;
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+#head_aside
+{
+	align-items: flex-end;
+	margin-bottom: 2%;
+}
+#head_aside .fa-chart-line
+{
+	margin-right: 2.5%;
+	font-size: 1.2em;
+}
+.vignette_aside, .vignette
+{
+	width: 96%;
+	margin-left: 2%;
+}
+.notes_aside, .notes /*étoiles*/
+{
+	font-size: 0.7em;
+}
+#hebergements article
+{
+	order: 2;
+	background-color: #FFFFFF;
+	width: 100%;
+	margin-bottom: 4%;
+}
+#lieu_hebergement
+{
+	flex-direction: column;
+}
+#affiche_plus
+{
+	margin-top: 2%;
+}
+/*////////////////////////////////*/
+      /*ARTICLE ACTIVITES*/
+/*///////////////////////////////*/
+#lieu_activite
+{
+	flex-direction: column;
+}
+.vignette_activites, .vignette_activ_vertical
+{
+	width: 95%;
+	margin-left: 2.5%;
+}
+.vignette_activ, .vignette_activites
+{
+	margin-bottom: 5%;
+}
+.vignette_activites picture img, .vignette_activ picture img, #lieu_hebergement a picture img
+{
+	width: 100%;
+	height: auto;
+}
+/*////////////////////////////////////////////////////////////////*/
+                              /*FOOTER*/
+/*////////////////////////////////////////////////////////////////*/
+footer 
+{
+	flex-direction: column;
+}
+#a_propos, #nos_hebergements, #assistance
+{
+	width: 100%;
+	margin-left: 5%;
+}
+footer a
+{
+	font-size: 0.8em;
+}
+footer h3
+{
+	padding: 4% 0 4% 0;
+}
+#a_propos
+{
+	padding-top: 4%
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+             /*mobiles PAYSAGE*/
+/*////////////////////////////////////////////////////////////////*/
+@media (min-width: 500px)
+{
+	aside
+	{
+		padding-bottom: 2%;
+		padding-top: 2%;
+	}
+	h3
+	{
+		font-size: 1.2em;
+		padding-left: 3%;
+	}
+	#head_aside h2, #hebergements article h2, #activites article h2
+	{
+		font-size: 1.5em;
+	}
+	.fa-info
+	{
+		top: 0px;
+	}
+	footer a
+	{
+		font-size: 1em;
+	}
+	.vignette p, .notes_aside, .notes
+	{
+		font-size: 1em;
+		padding-left: 3%;
+	}
+}

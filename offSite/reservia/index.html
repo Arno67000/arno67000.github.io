@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1" />
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" media="(max-width: 759px)" href="smartphone.css"/>
+		<link rel="stylesheet" media="(min-width: 760px) and (max-width: 1025px)" href="tablet.css"/>
+		<script src="https://kit.fontawesome.com/3c2893d5d3.js" crossorigin="anonymous"></script>
+		<title>Prototype site Espedia</title>
+	</head>
+	
+	<body>
+		<!--//////////////////////////En-tête///////////////////////-->
+		<header>
+			<div id="en_tete">
+				<p><img src="maquette/image/logo/Reservia.svg" alt="logo reservia" id="logo" /></p>
+				<nav>
+					<a href="#hebergements">Hébergements</a>
+					<a href="#activites">Activités</a>
+				</nav>
+				<a href="" id="register">S'inscrire</a>
+			</div>		
+			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+			<p>En plein centre-ville ou en pleine nature</p>	
+		</header>
+
+		<main>
+			<!--/////////////////Recherche///////////////////-->
+			<div id="recherche">
+				<div id="lieu">
+					<i class="fas fa-map-marker-alt"></i><!--icone gps marker-->
+					<form method="post" action="#">
+						<input type="search" name="search" id="text_area" value="Marseille, France" />
+						<input type="submit" name="submit" value="Rechercher" id="bouton"/>
+						<button id="bouton_phone"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<!--Filtres-->
+				<div id="filtres">	
+					<p>Filtres</p>
+					<button><i class="fas fa-money-bill-wave"></i>Economique</button>
+					<button><i class="fas fa-child"></i>Familial</button>
+					<button><i class="fas fa-heart"></i>Romantique</button>
+					<button><i class="fas fa-dog"></i>Animaux autorisés</button>
+				</div>	
+				<!--//////////////////Infos/////////////////////////-->
+				<div id="info">
+					<i class="fas fa-info"></i>
+					<p>Plus de 500 logements sont disponibles dans cette ville</p>
+				</div>
+			</div>
+
+			<!--////////////////////Hébergements///////////////////-->
+			<div id="hebergements">
+				<article>
+					<h2>Hébergements à Marseille</h2>
+					<div id="lieu_hebergement">
+						<a href="" class="vignette">
+							<picture>
+								<source media="(max-width: 1025px)" srcset="maquette/image/cannebiere_phone.jpg"/>
+								<source srcset="maquette/image/cannebiere.jpg"/>
+								<img src="maquette/image/cannebiere.jpg" alt="photo_chambre" />
+							</picture>
+							<h3>Auberge la Cannebière</h3>
+							<p>Nuit à partir de <span>25€</span></p>
+							<div class="notes">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star off"></i>
+							</div>
+						</a>
+						<a href="" class="vignette">
+							<picture>
+								<source media="(max-width: 1025px)" srcset="maquette/image/port_phone.jpg"/>
+								<source srcset="maquette/image/port.jpg"/>
+								<img src="maquette/image/port.jpg" alt="photo_chambre" />
+							</picture>
+							<h3>Hôtel du port</h3>
+							<p>Nuit à partir de 52<span>€</span></p>
+							<div class="notes">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+							</div>
+						</a>
+						<a href="" class="vignette">
+							<picture>
+								<source media="(max-width: 1025px)" srcset="maquette/image/mouettes_phone.jpg"/>
+								<source srcset="maquette/image/mouettes.jpg"/>
+								<img src="maquette/image/mouettes.jpg" alt="photo_chambre" />
+							</picture>
+							<h3>Hôtel Les mouettes</h3>
+							<p>Nuit à partir de 76<span>€</span></p>
+							<div class="notes">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star off"></i>
+							</div>
+						</a>
+						<a href="" class="vignette">
+							<picture>
+								<source media="(max-width: 1025px)" srcset="maquette/image/mer_phone.jpg"/>
+								<source srcset="maquette/image/mer.jpg"/>
+								<img src="maquette/image/mer.jpg" alt="photo_chambre" />
+							</picture>
+							<h3>Hôtel de la mer</h3>
+							<p>Nuit à partir de 46<span>€</span></p>
+							<div class="notes">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star off"></i><i class="fas fa-star off"></i>
+							</div>
+						</a>
+						<a href="" class="vignette">
+							<picture>
+								<source media="(max-width: 1025px)" srcset="maquette/image/panier_phone.jpg"/>
+								<source srcset="maquette/image/panier.jpg"/>
+								<img src="maquette/image/panier.jpg" alt="photo_chambre" />
+							</picture>
+							<h3>Auberge Le Panier</h3>
+							<p>Nuit à partir de <span>23€</span></p>
+							<div class="notes">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star off"></i>
+							</div>
+						</a>
+						<a href="" class="vignette">
+							<picture>
+								<source media="(max-width: 1025px)" srcset="maquette/image/amina_phone.jpg"/>
+								<source srcset="maquette/image/amina.jpg"/>
+								<img src="maquette/image/amina.jpg" alt="photo_chambre" />
+							</picture>
+							<h3>Hôtel chez Amina</h3>
+							<p>Nuit à partir de 96<span>€</span></p>
+							<div class="notes">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+							</div>
+						</a>					
+					</div>
+					<a href="" id="affiche_plus">Afficher plus</a>					
+				</article>
+				<!--////////////////ASIDE///////////////////////////-->
+				<aside>
+					<div id="head_aside">
+						<h2>Les plus populaires</h2>
+						<i class="fas fa-chart-line"></i>
+					</div>	
+					<a href="" class="vignette_aside">
+						<img src="maquette/image/soleil.jpg" alt="photo_chambre"/>
+						<div class="img_title">
+							<h3>Hôtel Le soleil du <br/>matin</h3>
+							<p>Nuit à partir de 128<span>€</span></p>
+							<div class="notes_aside">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+							</div>	
+						</div>
+					</a>
+					<a href="" class="vignette_aside">
+						<img src="maquette/image/eau.jpg" alt="photo_chambre"/>
+						<div class="img_title">
+							<h3>Au coeur de l'eau<br/>Chambres d'hôtes</h3>
+							<p>Nuit à partir de 71<span>€</span></p>
+							<div class="notes_aside">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star off"></i>
+							</div>	
+						</div>
+					</a>
+					<a href="" class="vignette_aside">
+						<img src="maquette/image/bleuetblanc.jpg" alt="photo_chambre"/>
+						<div class="img_title">
+							<h3>Hôtel Tout bleu et <br/>Blanc</h3>
+							<p>Nuit à partir de 68<span>€</span></p>
+							<div class="notes_aside">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star off"></i>
+							</div>	
+						</div>
+					</a>
+				</aside>
+			</div>
+			<!--Activités-->
+			<div id="activites">
+				<article>
+					<h2>Activités à Marseille</h2>
+					<div id="lieu_activite">
+						<a href="" class="vignette_activites">
+							<picture>
+								<source media="(max-width: 1025px)" srcset="maquette/image/vieux_port_phone.jpg"/>
+								<source srcset="maquette/image/vieux_port.jpg"/>
+								<img src="maquette/image/vieux_port.jpg" alt="photo vieux port" />
+							</picture>
+							<h3>Vieux Port</h3>
+						</a>	
+						<div class="vignette_activ_vertical">
+							<a href="" class="vignette_activ">
+								<picture>
+									<source media="(max-width: 1025px)" srcset="maquette/image/pomegues_phone.jpg"/>
+									<source srcset="maquette/image/pomegues.jpg"/>
+									<img src="maquette/image/pomegues.jpg" alt="photo fort de Pomègues" />
+								</picture>
+								<h3>Fort de Pomègues</h3>
+							</a>
+							<a href="" class="vignette_activ">	
+								<picture>
+									<source media="(max-width: 1025px)" srcset="maquette/image/frioul_phone.jpg"/>
+									<source srcset="maquette/image/frioul.jpg"/>
+									<img src="maquette/image/frioul.jpg" alt="photo îles du Frioul" />
+								</picture>
+								<h3>Îles du Frioul</h3>
+							</a>	
+						</div>
+						<a href="" class="vignette_activites">
+							<picture>
+								<source media="(max-width: 1025px)" srcset="maquette/image/calanques_phone.jpg"/>
+								<source srcset="maquette/image/calanques.jpg"/>
+								<img src="maquette/image/calanques.jpg" alt="photo_calanques"/>
+							</picture>
+							<h3>Parc National des Calanques</h3>
+						</a>	
+						<div class="vignette_activ_vertical">
+							<a href="" class="vignette_activ">
+								<picture>
+									<source media="(max-width: 1025px)" srcset="maquette/image/garde_phone.jpg"/>
+									<source srcset="maquette/image/garde.jpg"/>
+									<img src="maquette/image/garde.jpg" alt="photo_église"/>
+								</picture>
+								<h3>Notre-Dame-de-la-Garde</h3>
+							</a>
+							<a href="" class="vignette_activ">	
+								<picture>
+									<source media="(max-width: 1025px)" srcset="maquette/image/longchamp_phone.jpg"/>
+									<source srcset="maquette/image/longchamp.jpg"/>
+									<img src="maquette/image/longchamp.jpg" alt="photo_longchamp"/>
+								</picture>
+								<h3>Parc Longchamp</h3>
+							</a>	
+						</div>
+					</div>
+				</article>
+			</div>				
+		</main>
+		<!--Pied de page-->
+		<footer>
+			<div id="a_propos">
+				<h3>A propos</h3>
+				<a href="">Fonctionnement du site</a>
+				<a href="">Conditions générales de vente</a>
+				<a href="">Données et confidentialité</a>
+			</div>
+			<div id="nos_hebergements">
+				<h3>Nos hébergements</h3>
+				<a href="">Charte qualité</a>
+				<a href="">Soumettre votre hôtel</a>
+			</div>
+			<div id="assistance">
+				<h3>Assistance</h3>
+				<a href="">Centre d'aide</a>
+				<a href="">Nous contacter</a>
+			</div>
+		</footer>
+	</body>
+</html>			

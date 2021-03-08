@@ -1,0 +1,524 @@
+/*POLICES*/
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('police/raleway-regular-webfont.woff2') format('woff2'),
+         url('police/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('police/raleway-bold-webfont.woff2') format('woff2'),
+         url('police/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('police/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('police/raleway-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*/////////////////////////////*/
+/*GENERAL // STYLE_POLICE_COLOR*/
+/*/////////////////////////////*/
+a
+{
+	font-family: ralewayregular, sans-serif;
+	text-decoration: none;
+	color: black;
+}
+p
+{
+	font-family: ralewayregular, sans-serif;
+}
+h1, h2, h3
+{
+	font-family: ralewayextrabold, sans-serif;
+	font-weight: bolder;
+}
+h3
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-left: 4%;
+}
+header, main
+{
+	width: 90%;
+	margin: auto;
+}
+span
+{
+	font-family: ralewaybold, sans-serif;
+	font-weight: bold;
+}
+.fa-star             /*Etoiles bleues*/
+{
+	color: #0065FC;
+}
+.off                 /*Etoiles grises*/
+{
+	color: #F2F2F2;
+}
+.notes, .notes_aside /*Etoiles*/
+{
+	font-size: 0.8em;
+}
+/*////////////////////////////////////////////////////////////////////////////*/
+                                   /*HEADER*/
+/*////////////////////////////////////////////////////////////////////////////*/
+h1
+{
+	font-size: 1.4em;
+}
+/*///////////////////////////////*/
+              /*NAV*/
+/*//////////////////////////////*/
+nav
+{
+	display: flex;
+	flex-wrap: nowrap;
+}
+nav a
+{
+	display: inline-block;
+	padding-top: 50px;
+	width: 150px;
+	text-align: center;
+	font-size: 1em;
+}
+nav a:hover
+{
+	color: #0065FC;
+	border-top: 2px #0065FC solid;
+}
+
+#register
+{
+	font-family: ralewaybold, sans-serif;
+	padding-top: 52px;
+	font-weight: bolder;
+	color: #0065FC;
+	margin-left: 5px;
+	margin-right: 20px;
+}
+/*//////////////////////////////*/
+         /*En-TETE*/
+/*/////////////////////////////*/
+#en_tete
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	margin-bottom: 70px;
+}
+#logo
+{
+	margin-top: 30px;
+	position: absolute;
+	left: 5%;
+	width: 130px;
+	height: 50px;
+}
+/*///////////////////////////////////////////////////////////////////////////*/
+                                 /*MAIN*/
+/*///////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////*/
+     /*ZONE DE RECHERCHE*/
+/*/////////////////////////////*/
+#lieu
+{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+.fa-map-marker-alt                       /*icone marker*/
+{
+	display: inline-block;
+	border: 1px #F2F2F2 solid;
+	border-radius: 15px 0px 0px 15px;
+	background-color: #F2F2F2;
+	padding: 12px 17px 12px 17px;
+	height: auto;
+}
+#text_area
+{
+	border: 1px #F2F2F2 solid;
+	height: 45px;
+	width: 250px;
+	padding-left: 25px;
+	font-family: ralewaybold, sans-serif;
+	font-size: 1.1em;
+	margin-right: 0px;
+}
+#text_area:focus
+{
+	background-color: #F2F2F2;
+	color: #0065FC;
+}
+#bouton                              /*bouton 'rechercher'*/
+{
+	display: inline-block;
+	height: 45px;
+	position: relative;
+	left: -5px;
+	margin-left: 0px;
+	background-color: #0065FC;
+	font-family: ralewayregular, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px #0065FC solid;
+	border-radius: 0px 15px 15px 0px; 
+}
+#bouton_phone
+{
+	display: none;
+}
+/*///////////////////////////////////*/
+          /*LES FILTRES*/
+/*//////////////////////////////////*/
+#filtres
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#filtres p
+{
+	font-family: ralewayextrabold, sans-serif;
+	margin-right: 25px;
+	padding-left: 8px;
+}
+.fa-money-bill-wave                     /*icone billet*/
+{
+	position: relative;
+	bottom: 4px;
+	left: -12px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	padding: 12px 10px 12px 10px;
+	border-radius: 25px 25px 25px 25px;
+	margin-right: 10px;
+}          
+.fa-child                              /*icone enfant*/
+{
+	position: relative;
+	bottom: 4px;
+	left: -12px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	padding: 12px 14px 12px 14px;
+	border-radius: 25px 25px 25px 25px;
+	margin-right: 10px;
+}          
+.fa-heart, .fa-dog                               /*icone coeur et chien*/
+{
+	position: relative;
+	bottom: 4px;
+	left: -12px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	padding: 12px 12px 12px 12px;
+	border-radius: 25px 25px 25px 25px;
+	margin-right: 10px;
+}          
+#filtres button
+{
+	display: flex;
+	height: 36px;
+	line-height: 36px;
+	background-color: #FFFFFF;
+	border-top: 2px #F2F2F2 solid;
+	border-bottom: 2px #F2F2F2 solid;
+	border-right: 2px #F2F2F2 solid;
+	margin: 10px 20px 10px 15px;
+	border-radius: 25px 25px 25px 25px;
+	font-family: ralewayextrabold, sans-serif;
+	font-size: 1em;
+	padding-right: 15px;
+}     
+#filtres button:hover
+{
+	border-top: 2px #0065FC outset;
+	border-right: 2px #0065FC outset;
+	border-bottom: 2px #0065FC outset;
+	color: #0065FC;
+	background-color: #DEEBFF;
+}  
+/*////////////////////////////////*/
+            /*INFO*/
+/*////////////////////////////////*/
+
+#info
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 22px;
+	padding-left: 4px;
+}
+.fa-info
+{
+	color: #0065FC;
+	background-color: #FFFFFF;
+	padding: 5px 8px 5px 8px;
+	border: 2px #F2F2F2 solid;
+	border-radius: 25px 25px 25px 25px;
+	font-size: 0.6em;
+	margin-right: 12px;
+}
+/*///////////////////////////////////*/
+/*ARTICLE HEBERGEMENT+++ASIDE FLEXBOX*/
+/*///////////////////////////////////*/
+
+#hebergements                                  
+{
+	display: flex;
+	justify-content: space-between;
+}
+/*//////////////////////////////*/
+     /*ARTICLE HEBERGEMENT*/
+/*//////////////////////////////*/
+#lieu_hebergement
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 2%;
+}
+#hebergements article
+{
+	background-color: #F2F2F2;
+	width: 66%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+	margin-right: 2%;
+	margin-bottom: 45px;
+	padding: 2% 1% 2% 1%;
+}
+#hebergements article h2
+{
+	padding-left: 3%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#affiche_plus
+{
+	padding-left: 3%;
+	font-family: ralewayextrabold, sans-serif;
+}
+.vignette                            /*VIGNETTE BLANCHE HEBERGEMENT*/
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 28%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: left;
+	padding: 5px 5px 15px 5px;
+	background-color: #FFFFFF;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+}
+a picture
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+.vignette picture
+{
+	padding: 0 1% 1% 1%;
+}
+.notes, .vignette p
+{
+	padding-left: 4%;
+	margin: 4px 0px 5px 0px;
+}
+#lieu_hebergement a picture img           /*PHOTOS HEBERGEMENTS MARSEILLE*/
+{
+	display: block;
+	border-radius: 15px 15px 0px 0px;
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+/*///////////////////////////*/
+          /*ASIDE*/
+/*///////////////////////////*/
+#head_aside
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+aside
+{
+	width: 32%;
+	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+	padding-bottom: 2%;
+	margin-bottom: 45px;
+}
+#head_aside h2
+{
+	padding-left: 8%;
+	margin-bottom: 4%;
+	margin-top: 6%;
+}
+#head_aside .fa-chart-line
+{
+	padding-right: 5%; 
+	font-size: 1.4em;
+	margin-bottom: 4%;
+	margin-top: 4%;
+}
+#head_aside .fa-chart-line:hover
+{
+	color: #0065FC;
+}
+.vignette_aside
+{
+	width: 89%;
+	height: auto;
+	background-color: #FFFFFF;
+	margin-left: 8%;
+	margin-bottom: 4%;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+}
+.vignette_aside img
+{
+	float: left;
+	min-width: 33%;
+	max-width: 37%;
+	height: auto;
+	padding: 5px 20px 5px 5px;
+	border-radius: 15px 0px 0px 15px;
+}
+.img_title
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.img_title p
+{
+	margin: 5px 0px 25% 0px;
+	font-size: 0.9em;
+}
+.img_title h3
+{
+	padding-top: 5px;
+	padding-left: 0%;
+}
+
+/*////////////////////////////////*/
+      /*ARTICLE ACTIVITES*/
+/*///////////////////////////////*/
+#activites
+{
+	width: 100%;
+}
+#lieu_activite
+{
+	display: flex;
+	justify-content: space-between;
+}
+.vignette_activites
+{
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+	width: 23%;
+}
+.vignette_activites picture img, .vignette_activ picture img
+{
+	width: 100%;
+	height: auto;
+	border-radius: 15px 15px 0px 0px;
+	margin-bottom: 10px;
+}
+.vignette_activ
+{
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+	width: 100%;
+	height: auto;
+}
+.vignette_activ_vertical
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 23%;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+                              /*FOOTER*/
+/*////////////////////////////////////////////////////////////////////////*/
+footer
+{
+	width: 100%;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: flex-start;
+}
+#a_propos
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 27%;
+	margin-left: 5%;
+}
+#nos_hebergements
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 27%;
+	margin-left: 2%;
+}
+#assistance
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 27%;
+	margin-left: 2%;
+}
+footer a
+{
+	margin-bottom: 10px;
+}
+footer a:hover
+{
+	color: #0065FC;
+}
+footer h3
+{
+	padding: 8% 0 5% 0;
+}

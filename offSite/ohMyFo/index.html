@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1" />
+		<link rel="stylesheet" href="style/css/style.css"/>
+		<script src="https://kit.fontawesome.com/3c2893d5d3.js" crossorigin="anonymous"></script>
+		<title>Projet ohmyfood</title>
+	</head>
+
+	<body>
+<!--//////////EN-TETE//////////////////////-->
+		<header>
+			<div class="loader"><i class="fas fa-utensils"></i></div>
+			<p><img src="assets/images/ohmyfoodsvg.svg" alt="logo ohmyfood" class="logo logo--main"/></p>
+		</header>
+<!--////////////RECHERCHE////////////////-->
+		<main class="main-page">
+			<hr class="divider">
+			<div class="localisation">
+				<div class="localisation__heading">
+					<i class="fas fa-map-marker-alt"></i><!--icone gps marker-->
+					<form method="post" action="#">
+						<input type="text" name="search" class="form" value="Paris, Belleville" />
+					</form>
+				</div>
+				<h1>Book the menu you like</h1>
+				<p>Discover top-of-the-art restaurants we picked for you</p>
+				<input type="button" name="search" class="btn" value="Explore our restaurants"/>
+			</div>
+<!--//////////////NAV///////////////////-->
+			<nav>
+				<h2>How it works</h2>
+				<button class="nav-btn"><span class="nav-btn__numbers">1</span><i class="nav-btn__icone fas fa-mobile-alt"></i>Chose a restaurant</button>
+				<button class="nav-btn"><span class="nav-btn__numbers">2</span><i class="nav-btn__icone fas fa-list-ul"></i>Create your menu</button>
+				<button class="nav-btn"><span class="nav-btn__numbers">3</span><i class="nav-btn__icone fas fa-store"></i>Go enjoy it at the restaurant</button>
+			</nav>
+<!--///////////////////ARTICLE/////////////-->
+			<article>
+				<h2>Restaurants</h2>
+				<div class="thumbnail">
+					<a href="pages/menu_palette.html">
+						<picture>
+							<img src="assets/images/palette_main_phone.jpg" alt="photo plats"/>
+						</picture>
+						<div class="thumbnail__title">
+							<div>
+								<h3>The Full Palette</h3>
+								<p>New York</p>
+							</div>
+							<div class="thumbnail__title--new">New</div>
+						</div>	
+					</a>	
+					<i class="far fa-heart coeur coeur__bord"></i>
+					<i class="fas fa-heart coeur coeur__background"></i>
+				</div>
+				<div class="thumbnail">
+					<a href="pages/menu_plate.html">
+						<picture>
+							<img src="assets/images/plate_main_phone.jpg" alt="photo plats"/>
+						</picture>
+						<div class="thumbnail__title">
+							<div>
+								<h3>The Enchanted Plate</h3>
+								<p>New York</p>
+							</div>
+							<div class="thumbnail__title--new">New</div>
+						</div>
+					</a>
+					<i class="far fa-heart coeur coeur__bord"></i>
+					<i class="fas fa-heart coeur coeur__background"></i>	
+				</div>
+				<div class="thumbnail">
+					<a href="pages/menu_bastille.html">
+						<picture>
+							<img src="assets/images/bastille_main_phone.jpg" alt="photo plats" />
+						</picture>
+						<div class="thumbnail__title">
+							<div>
+								<h3>Bastille</h3>
+								<p>New York</p>
+							</div>
+						</div>
+					</a>	
+					<i class="far fa-heart coeur coeur__bord"></i>
+					<i class="fas fa-heart coeur coeur__background"></i>
+				</div>
+				<div class="thumbnail">
+					<a href="pages/menu_gourmand.html">
+						<picture>
+							<img src="assets/images/gourmand_main_phone.jpg" alt="photo plats"/>
+						</picture>
+						<div class="thumbnail__title">
+							<div>
+								<h3>Le Gourmand</h3>
+								<p>New York</p>
+							</div>
+						</div>
+					</a>	
+					<i class="far fa-heart coeur coeur__bord"></i>
+					<i class="fas fa-heart coeur coeur__background"></i>
+				</div>
+			</article>
+		</main>
+<!--////////////PIED-DE-PAGE/////////////-->		
+		<footer>
+			<p><img src="assets/images/ohmyfoodsvg-white.svg" alt="logo ohmyfood" class="logo--footer"></p>
+			<div class="footer__link">
+				<i class="footer__link--icones fas fa-utensils" id="ico-fork"></i>
+				<a href="#">Suggest a restaurant</a>
+			</div>
+			<div class="footer__link">
+				<i class="footer__link--icones fas fa-hands-helping"></i>
+				<a href="#">Become a partner</a>
+			</div>
+			<a href="#">Legal</a>
+			<a href="mailto:ohmyfood@contact.com">Contact</a>
+		</footer>
+		
+	</body>
+</html>

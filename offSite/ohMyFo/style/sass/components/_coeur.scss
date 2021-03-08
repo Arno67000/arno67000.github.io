@@ -1,0 +1,45 @@
+.coeur {
+    float: right;
+    position: relative;
+    top: -2.5rem;
+    font-size: 1.8rem;
+    &__bord {
+        color: black;
+        left: -1em;
+        z-index: 1;
+        &--menu {
+            top: -4rem;
+            @include desktop {
+                top: -12rem;
+                font-size: 2.2rem;
+            }
+            @include tablette {
+                top: -7rem;
+                font-size: 2rem;
+            }
+        }
+    }
+    &__background {
+        z-index: 2;
+        opacity: 0;
+        transform: scale(0.4);
+        transition: all 1s;
+        color: $colour-secondary;
+        &:hover { 
+            opacity: 0.5;
+            transform: scale(0.82);
+            cursor: pointer;
+        }
+        &--menu {
+            top: -4rem;
+            @include desktop {
+                top: -12rem;
+                font-size: 2.2rem;
+            }
+            @include tablette {
+                top: -7rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}

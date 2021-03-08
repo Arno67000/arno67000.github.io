@@ -1,0 +1,186 @@
+header, main
+{
+	width: 98%;
+	margin: auto;
+}
+.notes, .notes_aside /*Etoiles*/
+{
+	font-size: 0.7em;
+}
+h3
+{
+	font-size: 1.1em;
+	font-family: ralewaybold, sans-serif;
+}
+/*/////////HEADER+FILTRES//////////*/
+#logo
+{
+	height: 60px;
+	width: 150px;
+	margin-top: 20px;
+}
+nav a
+{
+	font-weight: bold;
+	width: 200px;
+}
+header p
+{
+	padding-left: 0.5%;
+}
+.fa-map-marker-alt
+{
+	height: auto;
+}
+#filtres
+{
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 130px;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+#filtres button
+{
+	margin: 10px 10px 10px 10px;
+	padding-right: 5px;
+}
+#filtres p
+{
+	height: 100%;
+	align-self: center;
+	border-right: 5px #F2F2F2 dotted;
+	padding-right: 5%;
+	font-size: 1.2em; 
+	padding-top: 4%;
+}
+#filtres p:hover
+{
+	border-right-color: #0065FC;
+}
+#text_area
+{
+	width: 60%
+}
+/*//////HEBERGEMENT+ASIDE///////*/
+#hebergements
+{
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1%;
+	justify-content: flex-start;
+}
+#hebergements article
+{
+	width: 98%;
+	margin-right: 0.5%;
+	order: 2;
+}
+.vignette  
+{
+	width: 45%;
+	margin: 1% 1% 1% 1%;
+}
+#lieu_hebergement a picture img           /*PHOTOS HEBERGEMENTS MARSEILLE*/
+{
+	padding-top: 1%;
+}
+.notes, .vignette p, .vignette h3
+{
+	padding-left: 2%;
+}
+aside
+{
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 2%;
+}
+.vignette_aside
+{
+	width: 31%;
+	height: auto;
+	margin: 1% 1% 1% 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#head_aside
+{
+	width: 100%;
+}
+#head_aside h2, #hebergements article h2 
+{
+	font-size: 1.4em;
+	font-family: ralewaybold, sans-serif;
+	margin: 1% 1% 1% 1%;
+	padding-top: 1%;
+	padding-left: 2%;
+}
+#head_aside i
+{
+	font-size: 1.4em;
+	margin: 1% 1% 1% 1%;
+	padding-top: 1%;
+}
+.img_title h3
+{
+	margin-top: 5px;
+}
+.vignette_aside img
+{
+	clear: left;
+	min-width: 96%;
+	border-radius: 15px 15px 0px 0px;
+	margin: 1% 1% 1% 1%;
+	padding: 1% 1% 1% 1%;
+}
+.img_title
+{
+	padding-left: 4%;
+	padding-bottom: 3%;
+}
+
+/*////////ACTIVITES///////*/
+#activites h2
+{
+	padding-left: 2%;
+}
+#lieu_activite
+{
+	flex-wrap: wrap;
+}
+.vignette_activ_vertical
+{
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.vignette_activ, .vignette_activites
+{
+	width: 48%;
+}
+#lieu_activite a:nth-of-type(1)
+{
+	order: 1;
+}
+#lieu_activite a:nth-of-type(2)
+{
+	order: 2;
+}
+#lieu_activite div:nth-of-type(1)
+{
+	order: 3;
+}
+#lieu_activite div:nth-of-type(2)
+{
+	order: 4;
+}
+/*///////FOOTER////////*/
+footer
+{
+	width: 98%;
+	margin: auto;
+	justify-content: space-between;
+}
