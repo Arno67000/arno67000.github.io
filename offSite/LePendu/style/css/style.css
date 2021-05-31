@@ -63,7 +63,8 @@
     transform: scale(0.8, 1.6);
   }
 }
-/* BREAKPOINTS FOR RESPONSIVE */
+
+
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.4em;
