@@ -80,16 +80,16 @@ body {
   body {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     font-size: 0.7em;
-    height: 60vh;
   }
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   body {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     font-size: 1em;
-    height: 60vh;
   }
 }
 
@@ -417,13 +417,13 @@ input:invalid {
 @media (max-width: 759px) {
   #board__words {
     width: 100%;
-    height: 50%;
+    height: 35%;
   }
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   #board__words {
     width: 100%;
-    height: 50%;
+    height: 35%;
   }
 }
 #board__words--word {
@@ -473,14 +473,14 @@ input:invalid {
 }
 @media (max-width: 759px) {
   #board__draw {
-    width: 65%;
-    max-height: 40%;
+    width: 75%;
+    max-height: 35%;
   }
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   #board__draw {
-    width: 65%;
-    max-height: 50%;
+    width: 50%;
+    max-height: 35%;
   }
 }
 
