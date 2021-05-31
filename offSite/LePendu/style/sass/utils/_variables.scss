@@ -1,0 +1,22 @@
+$phoneFontSize : 0.9em;
+$tabletteFontSize : 1.3em;
+$desktopFontSize : 1.4em;
+
+$colour-primary: rgb(228, 202, 171);
+$border-colour: rgb(177, 124, 102);
+$alert-colour: rgb(219, 52, 52);
+$colour-secondary: rgb(110, 74, 5);
+$border-secondary-colour: rgb(90, 47, 7);
+
+$background-whiteFilter: linear-gradient(to bottom, rgba(228, 202, 171, 0.4), rgba(228, 202, 171, 0.2));
+$image-whiteFilter: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.2));
+
+$textShadow: whitesmoke 2px 2px 6px;
+
+/* BREAKPOINTS FOR RESPONSIVE */
+
+$breakpoints : (
+    "tablette-min": 760px,
+    "tablette-max": 1024px,
+    "phone-max": 759px,
+);

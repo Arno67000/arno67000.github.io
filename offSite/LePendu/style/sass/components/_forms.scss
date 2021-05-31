@@ -1,0 +1,62 @@
+label {
+    font-size: inherit;
+}
+input[type=text] {
+    padding: 2%;
+    font-size: inherit;
+    text-align: center;
+    width: auto;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    @include phone {
+        padding: 1%;
+        margin: 0%;
+    }
+    @include tablette {
+        padding: 1%;
+        margin: 0%;
+    }
+}
+input[type=button] {
+    height: 4em;
+    width: auto;
+    border-radius: 20px;
+    padding: 5%;
+    font-size: 0.9em;
+    background-color: $colour-primary;
+    border: $border-colour 2px solid;
+    font-weight: bold;
+    @include phone {
+        font-size: $phoneFontSize;
+        margin: 0%;
+        height: auto;
+        padding: 2%;
+    }
+    @include tablette {
+        font-size: $tabletteFontSize;
+        padding: 2%;
+        height: auto;
+        margin: 0%;
+    }
+}
+input[type=button]:hover {
+    cursor: pointer;
+}
+input:invalid {
+    border: $alert-colour solid 3px;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    @include phone {
+        justify-content: space-evenly;
+        margin-bottom: 0.5%;
+        margin-top: 2%;
+    }
+    @include tablette {
+        justify-content: space-evenly;
+        margin-bottom: 0.5%;
+        margin-top: 2%;
+    }
+}

@@ -1,0 +1,36 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: $desktopFontSize;
+    background-image:  $background-whiteFilter, url(../../../assets/img/fondBois1.jpg);
+    background-size: 100vw 100vh;
+    padding: 2%;
+    width: 96vw;
+    height: 92vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    @include phone {
+        flex-direction: column;
+        align-items: center;
+        font-size: $phoneFontSize;
+    }
+    @include tablette {
+        flex-direction: column;
+        align-items: center;
+        font-size: $tabletteFontSize;
+    }
+}
+h1 {
+    text-transform: uppercase;
+    text-shadow: $textShadow;
+    letter-spacing: 5px;
+    font-size: 2.6em;
+    @include phone {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    @include tablette {
+        font-size: 1.8em;
+        text-align: center;
+    }
+}

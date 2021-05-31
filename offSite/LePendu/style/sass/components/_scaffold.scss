@@ -1,0 +1,129 @@
+.scaffold {
+    width: 100%;
+    height: 100%;
+    &__base {
+        width: 28%;
+        height: 5%;
+        top: 94%;
+        left: 15%;
+        &--animated {
+            @include scaffoldBaseAnimation;
+        }
+    }
+    &__mast {
+        width: 4%;
+        height: 75%;
+        top: 14%;
+        left: 25%;
+        &--animated {
+            @include scaffoldMastAnimation;
+        }
+    }
+    &__horizontal {
+        height: 5%;
+        width: 35%;
+        bottom: 65%;
+        left: 25%;
+        &--animated {
+            @include scaffoldHorizAnimation;
+        }
+    }
+    &__diag {
+        &--Bottom {
+            height: 15%;
+            width: 2%;
+            transform: skewX(-33deg);
+            left: 22%;
+            bottom: 6%;
+            @include phone {
+                bottom: 4%;
+                left: 23%;
+            }
+        }
+        &--Top {
+            height: 20%;
+            width: 2%;
+            transform: skewX(-33deg);
+            left: 30%;
+            bottom: 80%;
+        }
+        &--animated {
+            @include scaffPartFadeIn;
+        }
+    }
+    &__stool {
+        &--FootLeft {
+            height: 10%;
+            width: 2%;
+            left: 51%;
+            bottom: 31%;
+        }
+        &--FootRight {
+            height: 10%;
+            width: 1.8%;
+            left: 56%;
+            bottom: 41%;
+        }
+        &--Top {
+            height: 2%;
+            width: 10%;
+            left: 49.5%;
+            bottom: 51%;
+        }
+        &--animated {
+            @include stoolAnimation;
+        }
+        &--reversed {
+            @include stoolAnimationReverse;
+        }
+    }
+    &__rope {
+        background-color: $colour-secondary;
+        border: $border-secondary-colour outset 1px;
+        position: relative;
+        &--fix {
+            width: 1%;
+            border-radius: 20px;
+            height: 5.4%;
+            bottom: 127.3%;
+            left: 54%;
+            z-index: 2;
+        }
+        &--length { 
+            width: 1%;
+            border-radius: 20px;
+            height: 15.5%;
+            bottom: 128%;
+            left: 54%;
+            z-index: 0;
+        }
+        &--circle {
+            border:$colour-secondary solid 7.5px;
+            background-color: transparent;
+            width: 5%;
+            height: 8%;
+            bottom: 130%;
+            left: 51.3%;
+            border-radius: 100px;
+            z-index: 2;
+            @include phone {
+                border:$colour-secondary solid 4px;
+                height: 7%;
+                left: 51%;
+            }
+            @include tablette {
+                border:$colour-secondary solid 8px;
+                height: 7.3%;
+            }
+        }
+        &--animated {
+            @include scaffPartFadeIn;
+        }
+        &--hanged {
+            @include hangedman;
+        }
+        &--extended {
+            @include ropeExtended;
+        }
+    }
+}

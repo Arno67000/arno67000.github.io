@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/dataFetch.js" defer></script>
+    <script type="text/javascript" src="./js/index.js" defer></script>
+    <script type="text/javascript" src="./js/functionnal.js" defer></script>
+    <script type="text/javascript" src="./js/checkings.js" defer></script>
+    <script type="text/javascript" src="./js/rendering.js" defer></script>
+    <script type="text/javascript" src="./js/game.js" defer></script>
+    <link rel="stylesheet" href="./style/css/style.css">
+    <title>Le pendu</title>
+</head>
+
+<body onKeyPress="if (event.keyCode == 13) checkLetter()">
+
+    <div id="board__words">
+        <h1>Le pendu</h1>
+        <p>Trouvez un mot de huit-lettres</p>
+        <div id="board__words--alreadyUsed"></div>
+        <div id="board__words--word"></div>
+        <form>
+            <label for="letter">Choisissez une lettre : </label>
+            <input type="text" name="letter" id="letter" maxlength="1" size="1" onkeypress="return event.keyCode != 13;"
+                value="" autofocus required /><br>
+        </form>
+        <div id="board__words--alert"></div>
+        <div id="board__words--warning"></div>
+        <div id="board__words--success"></div>
+        <div class="btn-container">
+            <input type="button" value="Essayer cette lettre" id="submit" onclick="checkLetter()" disabled />
+            <input type="button" value="Nouvelle Partie" id="new" onclick="newGame()" disabled />
+        </div>
+    </div>
+
+    <div id="board__draw">
+        <div class="scaffold">
+            <div class="tile scaffold__base"></div>
+            <div class="tile scaffold__mast"></div>
+            <div class="tile scaffold__horizontal"></div>
+            <div class="tile scaffold__diag scaffold__diag--Bottom"></div>
+            <div class="tile scaffold__diag scaffold__diag--Top"></div>
+            <div class="tile scaffold__stool scaffold__stool--FootLeft"></div>
+            <div class="tile scaffold__stool scaffold__stool--FootRight"></div>
+            <div class="tile scaffold__stool scaffold__stool--Top"></div>
+            <div class="scaffold__rope scaffold__rope--fix"></div>
+            <div class="scaffold__rope scaffold__rope--length"></div>
+            <div class="scaffold__rope scaffold__rope--circle"></div>
+        </div>
+        <div class="hangman">
+            <div class="tile hangmanParts hangman__6" hidden></div>
+            <div class="tile hangmanParts hangman__5" hidden></div>
+            <div class="tile hangmanParts hangman__4" hidden></div>
+            <div class="tile hangmanParts hangman__3" hidden></div>
+            <div class="tile hangmanParts hangman__2" hidden></div>
+            <div class="tile hangmanParts hangman__1" hidden></div>
+        </div>
+    </div>
+</body>
+
+</html>

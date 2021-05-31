@@ -1,0 +1,73 @@
+.hangman {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    &__6 {
+        z-index: 2;
+        height: 12.2%;
+        width: 8.5%;
+        border-radius: 50px;
+        top: 30.6%;
+        left: 50.5%;
+        &--hanged {
+            @include hangedman;
+        }
+    }
+    &__5 {
+        z-index: 0;
+        height: 25%;
+        width: 4%;
+        border-radius: 10px;
+        top: 30%;
+        left: 52.5%;
+        &--hanged {
+            @include hangedman;
+        }
+    }
+    &__4 {
+        height: 12.2%;
+        border-radius: 10px;
+        width: 2%;
+        transform: skewX(-33deg);
+        left: 49%;
+        top: 5%;
+        &--hanged {
+            @include hangedman;
+        }
+    }
+    &__3 {
+        height: 12.2%;
+        border-radius: 10px;
+        width: 2%;
+        transform: skewX(33deg);
+        left: 58%;
+        top: -7%;
+        &--hanged {
+            @include hangedman;
+        }
+    }
+    &__2 {
+        height: 24%;
+        border-radius: 10px;
+        width: 2%;
+        transform: skewX(-10deg);
+        left: 51%;
+        top: 4%;
+        &--hanged {
+            @include hangedman;
+        }
+    }
+    &__1 {
+        height: 24%;
+        border-radius: 10px;
+        width: 2%;
+        transform: skewX(10deg);
+        left: 56%;
+        top: -20%;
+        &--hanged {
+            @include hangedman;
+        }
+    }
+}
+
