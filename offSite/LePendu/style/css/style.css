@@ -63,10 +63,10 @@
     transform: scale(0.8, 1.6);
   }
 }
-/* BREAKPOINTS FOR RESPONSIVE */
+
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 1.4em;
+  font-size: 1.5em;
   background-image: linear-gradient(to bottom, rgba(228, 202, 171, 0.4), rgba(228, 202, 171, 0.2)), url(../../assets/img/fondBois1.jpg);
   background-size: 100vw 100vh;
   padding: 2%;
@@ -78,18 +78,14 @@ body {
 }
 @media (max-width: 759px) {
   body {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 0.7em;
+    display: block;
+    font-size: 0.8em;
   }
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   body {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1em;
+    display: block;
+    font-size: 1.4em;
   }
 }
 
@@ -101,13 +97,15 @@ h1 {
 }
 @media (max-width: 759px) {
   h1 {
-    font-size: 1.1em;
+    font-size: 1.6em;
+    margin: 1% 0 0 0;
     text-align: center;
   }
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
+    margin: 1% 0 0 0;
     text-align: center;
   }
 }
@@ -141,7 +139,7 @@ input[type=button] {
   height: 4em;
   width: auto;
   border-radius: 20px;
-  padding: 5%;
+  padding: 2%;
   font-size: 0.9em;
   background-color: #e4caab;
   border: #b17c66 2px solid;
@@ -149,7 +147,7 @@ input[type=button] {
 }
 @media (max-width: 759px) {
   input[type=button] {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin: 0%;
     height: auto;
     padding: 2%;
@@ -157,8 +155,8 @@ input[type=button] {
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   input[type=button] {
-    font-size: 1em;
-    padding: 2%;
+    font-size: 1.1em;
+    padding: 1%;
     height: auto;
     margin: 0%;
   }
@@ -179,14 +177,12 @@ input:invalid {
 }
 @media (max-width: 759px) {
   .btn-container {
-    justify-content: space-evenly;
     margin-bottom: 0.5%;
     margin-top: 2%;
   }
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   .btn-container {
-    justify-content: space-evenly;
     margin-bottom: 0.5%;
     margin-top: 2%;
   }
@@ -312,8 +308,8 @@ input:invalid {
 @media (max-width: 759px) {
   .scaffold__rope--circle {
     border: #6e4a05 solid 4px;
-    height: 5%;
-    width: 3%;
+    height: 4%;
+    width: 2.8%;
     left: 51.5%;
   }
 }
@@ -417,13 +413,13 @@ input:invalid {
 @media (max-width: 759px) {
   #board__words {
     width: 100%;
-    height: 35%;
+    height: 200px;
   }
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   #board__words {
     width: 100%;
-    height: 35%;
+    height: 350px;
   }
 }
 #board__words--word {
@@ -473,14 +469,16 @@ input:invalid {
 }
 @media (max-width: 759px) {
   #board__draw {
-    width: 75%;
-    max-height: 35%;
+    width: 200px;
+    height: 134px;
+    margin: auto;
   }
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   #board__draw {
-    width: 50%;
-    max-height: 35%;
+    width: 450px;
+    max-height: 300px;
+    margin: auto;
   }
 }
 
