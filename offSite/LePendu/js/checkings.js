@@ -43,6 +43,7 @@ function checkLetter() {
                     document.querySelector(`.hangman__${turn}`).hidden = false;
                 };
             };
+            unlockKeys();
             render();
             if(turn === 0 || wordArray.every(elt => elt === " ")) {
                 document.getElementById('letter').disabled = true;
@@ -64,18 +65,6 @@ function checkLetter() {
     };
 };
 
-function reportLetter(letter) {
-    document.getElementById("letter").value = letter;
-    document.getElementById(`${letter}`).disabled = true;
-};
-
-function cleanInput() {
-    let entry = document.getElementById('letter').value;
-    if(entry !== '') {
-        document.getElementById(`${entry}`).disabled = false;
-        document.getElementById('letter').value = '';
-    };
-};
 
 function disableKeyboard() {
     let keys = document.getElementsByClassName('key');

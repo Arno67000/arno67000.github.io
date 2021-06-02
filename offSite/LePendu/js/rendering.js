@@ -28,3 +28,29 @@ function hangTheMan() {
     document.querySelector(".scaffold__rope--circle").classList.add("scaffold__rope--hanged");
     document.querySelector(".scaffold__rope--length").classList.add("scaffold__rope--extended");
 }
+
+function reportLetter(letter) {
+    document.getElementById("letter").value = letter;
+    lockKeys();
+};
+
+function cleanInput() {
+    document.getElementById('letter').value = '';
+    unlockKeys();
+};
+
+function lockKeys() {
+    let keys = document.getElementsByClassName("key");
+    for(let key of keys) {
+        key.disabled = true;
+    }
+}
+
+function unlockKeys() {
+    let keys = document.getElementsByClassName('key');
+    for(let key of keys) {
+        if(!usedLetters.find(el => el === key.value)) {
+            key.disabled = false;
+        }
+    };
+}
