@@ -59,9 +59,11 @@ function checkLetter() {
                 };
             };
         };   
-    } else {
+    } else if(turn !== 0 && !wordArray.every(elt => elt === " ")) {
         document.getElementById('board__words--alert').innerHTML = "Tu dois entrer 1 lettre majuscule ou minuscule";
         render();
+    } else {
+        document.getElementById('board__words--alert').innerHTML = 'Clique sur "Nouvelle Partie" pour rejouer';
     };
 };
 

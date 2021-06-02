@@ -43,14 +43,16 @@ function lockKeys() {
     let keys = document.getElementsByClassName("key");
     for(let key of keys) {
         key.disabled = true;
-    }
-}
+    };
+};
 
 function unlockKeys() {
-    let keys = document.getElementsByClassName('key');
-    for(let key of keys) {
-        if(!usedLetters.find(el => el === key.value)) {
-            key.disabled = false;
-        }
+    if(turn !== 0 && !wordArray.every(elt => elt === " ")) {
+        let keys = document.getElementsByClassName('key');
+        for(let key of keys) {
+            if(!usedLetters.find(el => el === key.value)) {
+                key.disabled = false;
+            }
+        };
     };
-}
+};
