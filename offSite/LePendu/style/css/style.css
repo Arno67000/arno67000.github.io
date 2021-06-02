@@ -63,7 +63,7 @@
     transform: scale(0.8, 1.6);
   }
 }
-/* BREAKPOINTS FOR RESPONSIVE */
+
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.5em;
@@ -94,6 +94,12 @@ body {
     font-size: 1.7em;
   }
 }
+@media (min-width: 1050px) and (max-width: 1300px) {
+  body {
+    display: block;
+    font-size: 1.3em;
+  }
+}
 
 h1 {
   text-transform: uppercase;
@@ -120,6 +126,13 @@ h1 {
     text-align: center;
   }
 }
+@media (min-width: 1050px) and (max-width: 1300px) {
+  h1 {
+    font-size: 1.9em;
+    margin: 1% 0 0 0;
+    text-align: center;
+  }
+}
 
 label {
   font-size: inherit;
@@ -143,6 +156,13 @@ input[type=text] {
   input[type=text] {
     padding: 1%;
     margin: 0%;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1300px) {
+  input[type=text] {
+    padding: 1%;
+    margin: 1%;
+    font-size: 1.3em;
   }
 }
 
@@ -182,6 +202,14 @@ input[type=button] {
     height: auto;
   }
 }
+@media (min-width: 1050px) and (max-width: 1300px) {
+  input[type=button] {
+    font-size: 0.9em;
+    padding: 1%;
+    height: auto;
+    margin: 0%;
+  }
+}
 
 input[type=button]:hover {
   cursor: pointer;
@@ -203,6 +231,12 @@ input:invalid {
   }
 }
 @media (min-width: 760px) and (max-width: 1049px) {
+  .btn-container {
+    margin-bottom: 0.5%;
+    margin-top: 2%;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1300px) {
   .btn-container {
     margin-bottom: 0.5%;
     margin-top: 2%;
@@ -353,6 +387,14 @@ input:invalid {
     left: 51.3%;
   }
 }
+@media (min-width: 1050px) and (max-width: 1300px) {
+  .scaffold__rope--circle {
+    border: #6e4a05 solid 7px;
+    height: 7%;
+    width: 4.5%;
+    left: 51.3%;
+  }
+}
 .scaffold__rope--animated {
   animation: fadein 0.6s ease-out 1s 1 both;
 }
@@ -460,6 +502,12 @@ input:invalid {
     height: 500px;
   }
 }
+@media (min-width: 1050px) and (max-width: 1300px) {
+  #board__words {
+    width: 100%;
+    max-height: 350px;
+  }
+}
 #board__words--word {
   font-size: 2em;
   align-self: center;
@@ -490,6 +538,13 @@ input:invalid {
 @media (min-width: 1050px) and (max-width: 1260px) and (max-height: 1500px) {
   #board__words--word {
     font-size: 1.8em;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1300px) {
+  #board__words--word {
+    font-size: 1.8em;
+    letter-spacing: 0.5em;
+    margin: 2% 0 2% 0;
   }
 }
 #board__words--alreadyUsed {
@@ -535,6 +590,14 @@ input:invalid {
     margin: auto;
     height: 500px;
     max-width: 900px;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1300px) {
+  #board__draw {
+    width: 576px;
+    max-height: 350px;
+    margin: auto;
+    margin-top: 3%;
   }
 }
 
