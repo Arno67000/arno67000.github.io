@@ -1,0 +1,43 @@
+@mixin button {
+    padding: auto;
+    @include phone {
+        font-size: 1rem !important;
+    }
+}
+
+@mixin homeTitlesTypo {
+    letter-spacing: 0.2em;
+    font-size: 3.5rem;
+    color: $SECONDARY_COLOR;
+    text-shadow: $HOME_SHADOWS;
+}
+
+@mixin cvHeadingUnderline {
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-bottom: 2%;
+}
+@mixin cvHeadingBasic {
+    font-size: 1.4rem;
+    margin-bottom: 2%;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* BREAKPOINTS FOR RESPONSIVE */
+$breakpoints: (
+    "tab-min": 760px,
+    "tab-max": 1024px,
+    "phone-max": 759px,
+);
+/*MIXINS FOR RESPONSIVE*/
+@mixin tab {
+    @media (min-width: map-get($map: $breakpoints, $key: "tab-min")) and (max-width: map-get($map: $breakpoints, $key: "tab-max")) {
+        @content;
+    }
+}
+@mixin phone {
+    @media (max-width: map-get($map: $breakpoints, $key: "phone-max")) {
+        @content;
+    }
+}

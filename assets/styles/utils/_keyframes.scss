@@ -1,0 +1,31 @@
+@keyframes rotate3d {
+    from {
+        transform: rotate3d(0, 1, 0, 0deg);
+        color: $SECONDARY_COLOR;
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+        color: $TERTIARY_COLOR;
+    }
+}
+
+@keyframes hover {
+    from {
+        color: $SECONDARY_COLOR;
+        text-shadow: $HOME_SHADOWS;
+    }
+    to {
+        color: $TERTIARY_COLOR;
+        text-shadow: $SHADOWED_PRIMARY_COLOR 2.5px 2.5px;
+    }
+}
+@keyframes hoverIn {
+    from {
+        color: $SECONDARY_COLOR;
+        opacity: 0;
+    }
+    to {
+        color: $TERTIARY_COLOR;
+        opacity: 1;
+    }
+}
